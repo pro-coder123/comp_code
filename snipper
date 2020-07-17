@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define all(c) c.begin(), c.end()
+#define SIZE(c) (c).size()
+#define RESET(c) memset (c, false, sizeof (c))
+#define REP(i,n) for(int i = 0, _n = (n); i < _n; i++)
+#define REP1(i,n) for(int i = 1, _n = (n); i <= _n; i++)
+#define DEBUG(x) { cerr << #x << " = " << x << endl; }
+#define PR0(a,n) {cerr<<#a<<" = ";REP(_,n) cerr << a[_] << ' '; cerr << endl;}
+#define pb push_back
+#define mp make_pair
+
+#ifndef ONLINE_JUDGE
+#define gc getchar
+#else
+#define gc getchar_unlocked
+#endif
+#define for_each_testcase int t; cin>>t; while(t--)
+typedef map<int,int> mii;
+typedef pair<long,long> ii;
+typedef std::vector<long> vi;
+typedef std::vector< std::vector< ii > > AdjList;
+typedef unsigned long long ull;
+typedef long long ll;
+
+template <class T> inline void scan(T &number)
+{
+    int negative = 1;register int c;number = 0;
+    while((c=gc())==' ' || c=='\n');
+    if (c=='-'){ negative = -1; c = gc();}
+    for (; (c>47 && c<58); c=gc()) number = number *10 + c - 48;
+    number *= negative;
+}
+inline void scan(string &s)
+{
+	char c; while((c=gc())=='\n'); for (; c!='\n' ; c=gc()) s+=c; 
+}
+int main(int argc, char const *argv[])
+{
+	auto beg = clock();
+    //ios_base::sync_with_stdio(false);
+    //cin.tie(NULL);
+
+
+	auto end = clock();
+  	fprintf(stderr, "%.3f sec\n", double(end - beg) / CLOCKS_PER_SEC);
+	return 0;
+} 
